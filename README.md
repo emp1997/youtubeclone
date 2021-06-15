@@ -131,7 +131,7 @@ header .icons .fa-search {
     margin-right: var(--padding);
 }
 
-.info .metadata .titleAndButton .title.clamp {      -line clamp를 사용하여 1줄만 보이도록 제한
+{      -line clamp를 사용하여 1줄만 보이도록 제한
     display: -webkit-box;                               
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
