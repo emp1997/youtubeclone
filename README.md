@@ -30,115 +30,14 @@ html
 
 css
 
-    :root {     -root로 사용 할 값들을                                             
-    /* Color */
-    --white-color: #fff;
-    --black-color: #140a00;
-    --blue-color: #3b47f1;
-    --red-color: #ff0000;
-    --grey-dark-color: #909090;
-    --grey-light-color: #e0e0e0;
-    
-    /* Size */
+    :root {}    -root로 사용 할 값들을 지정                                            
 
-    --padding: 12px;
-    --avatar-size: 40px;
-
-    /* Font Size */
-    --font-large: 18px;
-    --font-medium: 14px;
-    --font-small: 12px;
-    --font-micro: 10px;}       
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Roboto;
-}
-
-ul {
-    list-style: none;
-}
-
-button {
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-
-/* Header */
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: var(--padding);
-    background-color: var(--black-color);
-    color: var(--white-color);
-}
- 
-header .logo{
-    font-size: var(--font-large);
-    font: bolder;
-}
-
-header .logo i {
-    color: var(--red-color);
-}
-
-header .icons .fa-search {
-    margin-right: var(--padding);
-}
-
-
-/* Video Player */
-.player {
-    position: sticky;
-    top: 0;
-    text-align: center;
-    background-color: var(--black-color);
-}
-
-.player video {
-    width: 100%;
-    height: 100%;
-    max-width: 1000px;
-}
-
- body > .info {
-    padding: var(--padding);
-}
-
-.info .metadata .hashtags {
-    display: flex;
-    font-size: var(--font-small);
-    color: var(--blue-color);
-}
-
-.info .metadata .hashtags li {
-    margin-right: var(--padding);
-}
-
-.info .metadata .titleAndButton {
-    display: flex;
-}
-
-.info .metadata .titleAndButton .title {
-    font-size: var(--font-medium);
-
-    margin-right: var(--padding);
-}
-
-<div>
-.info .actions button {      -line clamp를 사용하여 1줄만 보이도록 제한
+.info .actions button {      
     display: -webkit-box;                               
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
-}
-    </div>
+}       -line clamp를 사용하여 1줄만 보이도록 제한
 
 .info .metadata .titleAndButton .moreBtn {      - 0.3초의 딜레이를 통한 애니매이션
     background-color: var(--white-color);
