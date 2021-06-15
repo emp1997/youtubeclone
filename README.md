@@ -131,22 +131,22 @@ header .icons .fa-search {
     margin-right: var(--padding);
 }
 
-.info .metadata .titleAndButton .title.clamp {
+.info .metadata .titleAndButton .title.clamp {      -line clamp를 사용하여 1줄만 보이도록 제한
     display: -webkit-box;                               
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
-}       -line clamp를 사용하여 1줄만 보이도록 제한
+}       
 
-.info .metadata .titleAndButton .moreBtn {
+.info .metadata .titleAndButton .moreBtn {      - 0.3초의 딜레이를 통한 애니매이션
     background-color: var(--white-color);
     height: 100%;
     transition: transform 300ms;                        
-}       - 0.3초의 딜레이를 통한 애니매이션
+}       
 
-.info .metadata .titleAndButton .moreBtn.clicked {
+.info .metadata .titleAndButton .moreBtn.clicked {      - More Button 아이콘 180도 회전
     transform: rotate(180deg);                          
-}       - More Button 아이콘 180도 회전
+}       
 
 .info .views{
     font-size: var(--font-small);
