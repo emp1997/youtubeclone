@@ -131,12 +131,14 @@ header .icons .fa-search {
     margin-right: var(--padding);
 }
 
-{      -line clamp를 사용하여 1줄만 보이도록 제한
+<div>
+.info .actions button {      -line clamp를 사용하여 1줄만 보이도록 제한
     display: -webkit-box;                               
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
-}       
+}
+    </div>
 
 .info .metadata .titleAndButton .moreBtn {      - 0.3초의 딜레이를 통한 애니매이션
     background-color: var(--white-color);
