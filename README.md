@@ -21,18 +21,16 @@ html
             <div class="views"></div>                      - 시청기록을 확인하는 부분
     </div>
 
-    <ul class="actions">                                   - 좋아요, 싫어요 버튼 부분
-            <li>                                             button에 icon을 적용해 icon이반응하게 제작
-                <button><i class="fas fa-thumbs-up"></i><span>1</span></button> 
-            </li>
+    <ul class="actions">                                   
+            <li><button><i class="fas fa-thumbs-up"></i><span>1</span></button></li>    - 좋아요, 싫어요 버튼 부분 button에 icon을 적용해 icon이반응하게 제작
     </ul>
     
-    <section class="UpNext">                               -관련 영상 부분 제작
-    </section>
+    <section class="UpNext"></section>      -관련 영상 부분 제작
+
 
 css
 
-    :root {                                                -root로 사용 할 값들을 
+    :root {                                                 
     /* Color */
     --white-color: #fff;
     --black-color: #140a00;
@@ -51,7 +49,7 @@ css
     --font-medium: 14px;
     --font-small: 12px;
     --font-micro: 10px;
-}
+}       -root로 사용 할 값들을
 
 *{
     padding: 0;
@@ -135,21 +133,21 @@ header .icons .fa-search {
 }
 
 .info .metadata .titleAndButton .title.clamp {
-    display: -webkit-box;                               -line clamp를 사용하여 1줄만 보이도록 제한
+    display: -webkit-box;                               
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
-}
+}       -line clamp를 사용하여 1줄만 보이도록 제한
 
 .info .metadata .titleAndButton .moreBtn {
     background-color: var(--white-color);
     height: 100%;
-    transition: transform 300ms;                        - 0.3초의 딜레이를 통한 애니매이션
-}
+    transition: transform 300ms;                        
+}       - 0.3초의 딜레이를 통한 애니매이션
 
 .info .metadata .titleAndButton .moreBtn.clicked {
-    transform: rotate(180deg);                          - More Button 아이콘 180도 회전
-}
+    transform: rotate(180deg);                          
+}       - More Button 아이콘 180도 회전
 
 .info .views{
     font-size: var(--font-small);
@@ -173,9 +171,9 @@ header .icons .fa-search {
 
 .info .actions button i {
     margin: 0 auto;
-    margin-bottom: calc(var(--padding) / 2);                - calc을 사용해 지정값을 축소
+    margin-bottom: calc(var(--padding) / 2);                
     font-size: 16px;
-}
+}       - calc을 사용해 지정값을 축소
 
 .info .actions button i.active {
     color: var(--blue-color);
@@ -214,7 +212,7 @@ header .icons .fa-search {
 }
 
 .info .channel .subscribe {
-    text-transform: uppercase; /* 대문자 */
+    text-transform: uppercase;
     color: var(--red-color);
     font-size: var(--font-medium);
 }
@@ -268,21 +266,21 @@ header .icons .fa-search {
     flex-direction: column;
 }
 
-@media screen and (min-width: 800px) {                                          -media query를 사용해 화면 크키 800px이상
-    .infoAndUpNext {                                                             일때 Up Next가 오른쪽으로 넘어가게 제작
+@media screen and (min-width: 800px) {                                          
+    .infoAndUpNext {                                                             
         flex-direction: row;
         margin: var(--padding);
     }
-}
+}       - media query를 사용해 화면 크키 800px이상일때 Up Next가 오른쪽으로 넘어가게 제작
 
 
 JavaScript
 
-const moreBtn = document.querySelector('.info .metadata .moreBtn');             - 변수 할당
-const title = document.querySelector('.info .metadata .title');
+const moreBtn = document.querySelector('.info .metadata .moreBtn');             
+const title = document.querySelector('.info .metadata .title');     - 변수 할당
 
-moreBtn.addEventListener('click',() => {                                        - moreBtn이 click되는것을 확인해서 
-    moreBtn.classList.toggle('clicked');                                          아래 두 조건을 toggle함
+moreBtn.addEventListener('click',() => {                                        
+    moreBtn.classList.toggle('clicked');                                          
     title.classList.toggle('clamp');
-});
+});     - moreBtn이 click되는것을 확인해서 아래 두 조건을 toggle함
 
