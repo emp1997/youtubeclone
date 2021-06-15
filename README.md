@@ -30,7 +30,7 @@ html
 
 css
 
-    :root {                                                 
+    :root {     -root로 사용 할 값들을                                             
     /* Color */
     --white-color: #fff;
     --black-color: #140a00;
@@ -49,7 +49,7 @@ css
     --font-medium: 14px;
     --font-small: 12px;
     --font-micro: 10px;
-}       -root로 사용 할 값들을
+}       
 
 *{
     padding: 0;
