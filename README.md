@@ -30,7 +30,7 @@ html
     <section class="UpNext">                               -관련 영상 부분 제작
     </section>
 
-css
+css[
     :root {                                                -root로 사용 할 값들을 
     /* Color */
     --white-color: #fff;
@@ -273,9 +273,10 @@ header .icons .fa-search {
         margin: var(--padding);
     }
 }
+]
 
 JavaScript
-
+[
 const moreBtn = document.querySelector('.info .metadata .moreBtn');             - 변수 할당
 const title = document.querySelector('.info .metadata .title');
 
@@ -283,3 +284,4 @@ moreBtn.addEventListener('click',() => {                                        
     moreBtn.classList.toggle('clicked');                                          아래 두 조건을 toggle함
     title.classList.toggle('clamp');
 });
+]
