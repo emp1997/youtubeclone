@@ -22,7 +22,9 @@ html
     </div>
 
     <ul class="actions">                                   
-            <li><button><i class="fas fa-thumbs-up"></i><span>1</span></button></li>    - 좋아요, 싫어요 버튼 부분 button에 icon을 적용해 icon이반응하게 제작
+            <li>         
+                <button><i class="fas fa-thumbs-up"></i><span>1</span></button>     - 좋아요, 싫어요 버튼 부분 button에 icon을 적용해 icon이반응하게 제작
+            </li>   
     </ul>
     
     <section class="UpNext"></section>      -관련 영상 부분 제작
@@ -32,146 +34,22 @@ css
 
     :root {}    -root로 사용 할 값들을 지정                                            
 
-.info .actions button {      
-    display: -webkit-box;                               
+ 
+    display: -webkit-box;                        -line clamp를 사용하여 1줄만 보이도록 제한       
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
-}       -line clamp를 사용하여 1줄만 보이도록 제한
+     
+    transition: transform 300ms;        - 0.3초의 딜레이를 통한 애니매이션   
+ 
+    transform: rotate(180deg);       - More Button 아이콘 180도 회전
 
-.info .metadata .titleAndButton .moreBtn {      - 0.3초의 딜레이를 통한 애니매이션
-    background-color: var(--white-color);
-    height: 100%;
-    transition: transform 300ms;                        
-}       
+    margin-bottom: calc(var(--padding) / 2);        - calc을 사용해 지정값을 축소
 
-.info .metadata .titleAndButton .moreBtn.clicked {      - More Button 아이콘 180도 회전
-    transform: rotate(180deg);                          
-}       
-
-.info .views{
-    font-size: var(--font-small);
-    color: var(--grey-dark-color);
-}
-
-/* Action Buttons */
-.info .actions {
-    display: flex;
-    justify-content: space-around;
-    margin: var(--padding) 0;
-}
-
-.info .actions button {
-    display: flex;
-    flex-direction: column;
-    font-size: var(--font-small);
-    color: var(--grey-dark-color);
-    background-color: var(--white-color);
-}
-
-.info .actions button i {
-    margin: 0 auto;
-    margin-bottom: calc(var(--padding) / 2);                
-    font-size: 16px;
-}       - calc을 사용해 지정값을 축소
-
-.info .actions button i.active {
-    color: var(--blue-color);
-}
-
-/* Channel Description */
-.channel {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid var(--grey-light-color);
-    border-bottom: 1px solid var(--grey-light-color);
-}
-.info .channel button {
-    background-color: var(--white-color);
-}
-
-.info .channel .metadata {
-    display: flex;
-    align-items: center;
-}
-
-.info .channel .metadata .info {
-    display: flex;
-    flex-direction: column;
-}
-
-.info .channel .metadata img {
-    width: var(--avatar-size);
-    height: var(--avatar-size);
-    border-radius: 50%;
-}
-
-.info .channel .metadata .info .subscribers {
-    font-size: var(--font-small);
-    color: var(--grey-dark-color);
-}
-
-.info .channel .subscribe {
-    text-transform: uppercase;
-    color: var(--red-color);
-    font-size: var(--font-medium);
-}
-
-/* Up Next */
-.upNext{
-    padding: 0 var(--padding);
-}
-
-.upNext > .title {
-    font-size: var(--font-medium);
-    color: var(--grey-dark-color);
-    margin-bottom: calc(var(--padding) / 2);
-}
-
-.upNext .item {
-    display: flex;
-    margin-top: var(--padding);
-}
-
-.upNext .item .img {
-    flex: 1 1 35%;
-    margin-right: var(--padding);
-}
-
-.upNext .item .img img {
-    width: 100%;
-}
-
-.upNext .item .info {
-    flex: 1 1 35%;
-}
-
-.upNext .item .moreBtn {
-    flex: 1 1 35%;
-}
-
-.upNext .item .info {
-    display: flex;
-    flex-direction: column;
-}
-
-.upNext .item .info .name,
-.upNext .item .info .views {
-    font-size: var(--font-micro);
-    color: var(--grey-dark-color);
-}
-
-.infoAndUpNext{
-    display: flex;
-    flex-direction: column;
-}
 
 @media screen and (min-width: 800px) {                                          
-    .infoAndUpNext {                                                             
-        flex-direction: row;
         margin: var(--padding);
-    }
-}       - media query를 사용해 화면 크키 800px이상일때 Up Next가 오른쪽으로 넘어가게 제작
+}      - media query를 사용해 화면 크키 800px이상일때 Up Next가 오른쪽으로 넘어가게 제작
 
 
 JavaScript
