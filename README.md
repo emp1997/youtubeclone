@@ -48,8 +48,7 @@ css
     --font-large: 18px;
     --font-medium: 14px;
     --font-small: 12px;
-    --font-micro: 10px;
-}       
+    --font-micro: 10px;}       
 
 *{
     padding: 0;
