@@ -44,8 +44,8 @@ header{
     display: flex;
     justify-content: space-between;
     padding: var(--padding);
-    background-color: var(--black-color);
-    color: var(--white-color);
+    background-color: var(--white-color);
+    color: var(--black-color);
 }
  
 header .logo{
@@ -67,7 +67,7 @@ header .icons .fa-search {
     position: sticky;
     top: 0;
     text-align: center;
-    background-color: var(--black-color);
+    background-color: var(--white-color);
 }
 
 .player video {
@@ -151,6 +151,7 @@ header .icons .fa-search {
 .channel {
     display: flex;
     justify-content: space-between;
+    padding: 5px 0;
     border-top: 1px solid var(--grey-light-color);
     border-bottom: 1px solid var(--grey-light-color);
 }
@@ -234,9 +235,29 @@ header .icons .fa-search {
     flex-direction: column;
 }
 
-@media screen and (min-width: 800px) {
+.comment{
+    padding: 5px var(--padding);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+
+@media screen and (min-width: 1000px) {
     .infoAndUpNext {
         flex-direction: row;
         margin: var(--padding);
+        margin-bottom: 0;
     }
+
+    .playerInfo{
+        width: 100%;
+    }
+
+    .upNext{
+        right: 0;
+        width: 30%;
+    }
+
+    .comment{
+        margin-right: 23.7%;
+    }
+
 }
