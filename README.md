@@ -47,19 +47,12 @@ css
     margin-bottom: calc(var(--padding) / 2);        - calc을 사용해 지정값을 축소
 
 
-@media screen and (min-width: 800px) { 
-}      - media query를 사용해 화면 크키 800px이상일때 Up Next가 오른쪽으로 넘어가게 제작
+    media query
+    - 화면 크키 800px이상일때 Up Next가 오른쪽으로 넘어가게 제작
 
 
-JavaScript
+    JavaScript
+    - moreBtn이 click되는것을 확인해서 아래 두 조건을 toggle함
 
-const moreBtn = document.querySelector('.info .metadata .moreBtn');             
-const title = document.querySelector('.info .metadata .title');     - 변수 할당
-
-moreBtn.addEventListener('click',() => {                                        
-    moreBtn.classList.toggle('clicked');                                          
-    title.classList.toggle('clamp');
-});     - moreBtn이 click되는것을 확인해서 아래 두 조건을 toggle함
-
-21.06.16 수정사항
--최근 YOUTUBE사이트를 참고해 Up Next가 오른쪽에 일정한 공간을 차지하게 수정, 댓글 title 
+    21.06.16 수정사항
+    - 최근 YOUTUBE사이트를 참고해 Up Next가 오른쪽에 일정한 공간을 차지하게 수정, 댓글 title 
