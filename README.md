@@ -54,5 +54,6 @@ css
     JavaScript
     - moreBtn이 click되는것을 확인해서 아래 두 조건을 toggle함
 
-    21.06.16 수정사항
+    이후 수정사항
     - 최근 YOUTUBE사이트를 참고해 Up Next가 오른쪽에 일정한 공간을 차지하게 수정, 댓글 title 
+    - 좋아요 버튼 누를때 파란색으로 바뀌게 수정, 댓글 title 및 정렬기준 글씨 크기와 배열 수정
