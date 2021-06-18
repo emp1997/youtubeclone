@@ -256,7 +256,7 @@ header .icons .fa-search {
 
 .comment .comments {
     padding-top: 20px;
-    border-bottom: 1px solid var(--grey-dark-color);
+    border-bottom: 1px solid var(--grey-light-color);
     width: 100%;
     height: 40px;
 
