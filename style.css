@@ -141,11 +141,34 @@ header .icons .fa-search {
     margin: 0 auto;
     margin-bottom: calc(var(--padding) / 2); /* calc는 절반 사용 */
     font-size: 16px;
+    position: relative;
 }
 
 .info .actions button i.clicked {
     color: var(--blue-color);
 }
+
+.info .actions .tooltip {
+    display: none;
+    width: auto;
+    background-color: #505050;
+    font-size: 8px;
+    color: var(--white-color);
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.info .actions .tooltip::after {
+    content: "";
+    border-width: 10px;
+}
+
+.info .actions button:hover .tooltip {
+    display: block;
+}
+
 
 /* Channel Description */
 .channel {
