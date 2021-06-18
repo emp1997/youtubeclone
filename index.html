@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>YoutubeClone</title>
+    <script src="https://kit.fontawesome.com/3aa73663cc.js" crossorigin="anonymous">
+    </script>
+    <script src="main.js" defer></script>
+</head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <span class="title">Youtube</span>
+            </div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </header>
+        
+        <div class="infoAndUpNext">
+            <div class="playerInfo">
+                <!-- Video Player -->
+            <section class="player">
+                <video controls src="video/Guitarist.mp4"></video>
+            </section>
+    
+                <!-- video Info -->
+            <section class="info">
+                <!-- Metadata -->
+                <div class="metadata">
+                    <ul class="hashtags">
+                        <li>#JCI</li>
+                        <li>#YouTubeClon</li>
+                        <li>#coding</li>
+                    </ul>
+                    <div class="titleAndButton">
+                        <span class="title clamp">
+                            Clon Coding : Youtube clone 제작 | 영상출처 : pixbay
+                            first Clone Coding title을 한줄까지만 나타내면서 나머지는 버튼을 클릭해야 볼 수 있게
+                        </span>
+                        <button class="moreBtn">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                        <span class="views">5 views 1 month ago</span>
+                </div>
+                <!-- Action -->
+                <ul class="actions">
+                    <li>
+                        <button>
+                            <i class="active fas fa-thumbs-up"></i><span>0</span>
+                            <span class="tooltip">이 동영상이 마음에 듭니다.</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-thumbs-down"></i><span>0</span>
+                            <span class="tooltip">이 동영상이 마음에 들지 않습니다.</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-share"></i><span>Share</span>
+                            <span class="tooltip">공유</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-plus"></i><span>Save</span>
+                            <span class="tooltip">저장</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-flag"></i><span>Report</span>
+                            <span class="tooltip">신고</span>
+                        </button>
+                    </li>
+                </ul>
+                <!-- Channel Description -->
+                <div class="channel">
+                    <div class="metadata">
+                        <img src="image/JCI.jpg" alt="">
+                        <div class="info">
+                            <span class="name">장청인</span>
+                            <span class="subscribers">1M subsribers</span>
+                        </div>
+                    </div>
+                    <button class="subscribe">subscribe</botton>
+                </div>
+            </section>
+            </div>
+    
+            <!-- Up Next -->
+            <section class="upNext">
+                <span class="title">Up next</span>
+                <ul>
+                    <li class="item">
+                        <div class="img"><img src="image/youtube-icon.jpg" alt=""></div>
+                        <div class="info">
+                            <span class="title">프론트엔드 개발 공부, 유튜브 클론 사이트 만들기, 첫 클론코딩</span>
+                            <span class="name">장청인</span>
+                            <span class="views">7K views</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="image/youtube-icon.jpg" alt=""></div>
+                        <div class="info">
+                            <span class="title">프론트엔드 개발 공부, 유튜브 클론 사이트 만들기, 첫 클론코딩</span>
+                            <span class="name">장청인</span>
+                            <span class="views">7K views</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="image/youtube-icon.jpg" alt=""></div>
+                        <div class="info">
+                            <span class="title">프론트엔드 개발 공부, 유튜브 클론 사이트 만들기, 첫 클론코딩</span>
+                            <span class="name">장청인</span>
+                            <span class="views">7K views</span>
+                        </div>
+                    </li>
+                    <button class="moreBtn"></button>
+                </ul>
+            </section>
+        </div>
+        <div class="comment">
+            <div class="tilte">
+                <span>댓글 1개</span>
+                <button>
+                    <i class="fas fa-align-left"></i>
+                    <span>정렬기준</span>
+                </button>
+            </div>
+
+            <div class="comments">
+                <img src="image/JCI.jpg" alt="">
+                <span class="list">공개 댓글 추가...</span>
+            </div>
+        </div>
+    </body>
+</html>
